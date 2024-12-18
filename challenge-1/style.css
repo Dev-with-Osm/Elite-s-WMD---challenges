@@ -180,7 +180,18 @@ table tr:last-child td {
   color: hsl(30, 10%, 34%);
   font-weight: 600;
 }
-
+@media screen and (max-width: 1250px) {
+  .container {
+    height: 100%;
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    height: 100%;
+    width: 85%;
+  }
+}
 @media screen and (max-width: 750px) {
   body {
     font-family: 'Outfit';
