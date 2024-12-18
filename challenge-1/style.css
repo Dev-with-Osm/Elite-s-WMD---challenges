@@ -177,7 +177,7 @@ table tr:last-child td {
   font-weight: 600;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 750px) {
   body {
     font-family: 'Outfit';
     font-weight: 400;
