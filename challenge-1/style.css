@@ -89,6 +89,10 @@ body {
   font-weight: 800;
   color: hsl(30, 10%, 34%);
 }
+.prep-div p {
+  color: #7f7778;
+  font-weight: 500;
+}
 .prep-sub-cont {
   display: flex;
   flex-direction: column;
