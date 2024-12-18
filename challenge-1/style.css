@@ -33,35 +33,41 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  padding: 40px;
   border-radius: 20px;
+  overflow: hidden;
+  padding: 40px 0;
 }
-
-.sub-cont {
-  /* padding: 40px; */
+.img_container {
+  padding: 0 40px;
+  border-radius: 10px;
+}
+.img_container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.content_container {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.header_container {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-
-.container h1 {
+.header_container h1 {
   font-family: 'Young Serif';
   color: hsl(24, 5%, 18%);
   font-weight: 500;
 }
 
-.container p {
+.header_container p {
   color: hsl(30, 10%, 34%);
   font-weight: 400;
 }
-
-.container img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.prep-cont {
+.prep_time {
   background-color: hsl(330, 100%, 98%);
   padding: 30px;
   display: flex;
@@ -69,7 +75,7 @@ body {
   gap: 20px;
   border-radius: 20px;
 }
-.prep-cont h3 {
+.prep_time h3 {
   color: hsl(332, 51%, 32%);
 }
 
@@ -81,6 +87,7 @@ body {
 
 .prep-div p span {
   font-weight: 800;
+  color: hsl(30, 10%, 34%);
 }
 .prep-sub-cont {
   display: flex;
@@ -96,28 +103,29 @@ body {
   background-color: hsl(332, 51%, 32%);
 }
 
-.ingre-container h2 {
+.ingredients,
+.instructions,
+.nutrition h2 {
   font-family: 'Young Serif';
   color: hsl(14, 45%, 36%);
   font-weight: 500;
 }
 
-.ingre-container {
+.ingredients,
+.instructions,
+.nutrition {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.ingre-container p {
+.ingredients,
+.instructions,
+.nutrition p {
   font-size: 15px;
   font-weight: 500;
   color: hsl(30, 10%, 34%);
-}
-.ingre-sub-container {
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  font-family: 'Outfit';
 }
 .ingre-dot {
   width: 4px;
@@ -125,7 +133,12 @@ body {
   border-radius: 100%;
   background-color: hsl(14, 45%, 36%);
 }
-
+.ingre-sub-container {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 hr {
   color: hsl(24, 5%, 18%);
 }
@@ -136,7 +149,6 @@ hr {
   color: hsl(14, 45%, 36%);
   align-self: flex-start;
 }
-
 .prep-div p span {
   font-weight: 700;
 }
@@ -183,10 +195,14 @@ table tr:last-child td {
     border-radius: 0px;
     padding: 0;
   }
-  .container img {
-    border-radius: 0px;
+  .img_container {
+    padding: 0;
+    border-radius: 0;
   }
-  .sub-cont {
-    padding: 40px;
+  .img_container img {
+    border-radius: 0;
+  }
+  table {
+    width: auto;
   }
 }
